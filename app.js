@@ -52,3 +52,20 @@ function actualizarLista(){
 
 
 //Funcion para seleccionar un amigo aleatorio
+function sortearAmigo(){
+    //Validar que haya amigos disponibles
+    if (amigos.length === 0){ //comprueba si el array 'amigos' esta vacio.
+        alert("No hay amigos disponibles para sortear. Agrega al menos uno.");
+        return;
+    }
+
+    //Genera un indice aleatorio
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length); //Genera un numero aleatorio entre 0 y la longitud del array menor
+
+    //Obtener el nombre sorteado
+    const amigoSorteado = amigos[indiceAleatorio];
+
+    //Mostrar el resultado en el HTML
+    const resultado = document.getElementById('resultado');
+    resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
+}
