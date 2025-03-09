@@ -70,3 +70,5 @@ function sortearAmigo() {
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
 }
+
+//fin
