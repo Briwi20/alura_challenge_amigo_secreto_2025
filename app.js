@@ -4,6 +4,7 @@
 let amigos = [];
 
 //Funciona para agregar un amigo
+//Funcion para agregar un amigo
 function agregarAmigo(){
     const inputAmigo = document.getElementsById('amigo');
     const nombreAmigo = inputAmigo.ariaValueMax.trim();
